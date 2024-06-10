@@ -7,24 +7,37 @@ const client_manifest = {
     "file": "B4uVmeYG.js",
     "name": "axios"
   },
-  "_BIX5giM9.js": {
+  "_DTRsyuHG.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BIX5giM9.js",
+    "file": "DTRsyuHG.js",
+    "name": "nuxt-link",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_gjZs8QDl.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "gjZs8QDl.js",
     "name": "vue.f36acd1f",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_BIt6EhNk.js": {
+  "layouts/header.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BIt6EhNk.js",
-    "name": "nuxt-link",
+    "file": "bwMBMjML.js",
+    "name": "header",
+    "src": "layouts/header.vue",
+    "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -34,16 +47,18 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CnVBb-9S.js",
+    "file": "CfJazQ7W.js",
     "name": "error-404",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_BIt6EhNk.js",
-      "_BIX5giM9.js",
+      "_DTRsyuHG.js",
+      "_gjZs8QDl.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": []
+    "css": [
+      "error-404.JekaaCis.css"
+    ]
   },
   "error-404.JekaaCis.css": {
     "file": "error-404.JekaaCis.css",
@@ -56,15 +71,17 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C01o0Pth.js",
+    "file": "mu80Cl8a.js",
     "name": "error-500",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_BIX5giM9.js",
+      "_gjZs8QDl.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": []
+    "css": [
+      "error-500.CNP9nqm1.css"
+    ]
   },
   "error-500.CNP9nqm1.css": {
     "file": "error-500.CNP9nqm1.css",
@@ -77,11 +94,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BBDDYIEY.js",
+    "file": "CkgMv1BD.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "dynamicImports": [
+      "layouts/header.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ]
@@ -91,14 +109,16 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "q5za1Ie7.js",
+    "file": "_jx5rCaz.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": [],
+    "css": [
+      "index.SaSVtgpu.css"
+    ],
     "assets": [
       "pikachu.wa4uzSou.png"
     ]
@@ -120,7 +140,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CmGcbKUy.js",
+    "file": "B6LhO8kr.js",
     "name": "_id_",
     "src": "pages/pokemon/[id].vue",
     "isDynamicEntry": true,
@@ -128,7 +148,9 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/entry.js",
       "_B4uVmeYG.js"
     ],
-    "css": []
+    "css": [
+      "_id_.B_cwA8HE.css"
+    ]
   },
   "_id_.B_cwA8HE.css": {
     "file": "_id_.B_cwA8HE.css",
@@ -141,19 +163,22 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BiHtv8An.js",
+    "file": "ChvDyIYy.js",
     "name": "list",
     "src": "pages/pokemon/list.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_BIt6EhNk.js",
+      "_DTRsyuHG.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_B4uVmeYG.js"
+      "_B4uVmeYG.js",
+      "layouts/header.vue"
     ],
-    "css": []
+    "css": [
+      "list.BkEct0gJ.css"
+    ]
   },
-  "list.BvFGP2xR.css": {
-    "file": "list.BvFGP2xR.css",
+  "list.BkEct0gJ.css": {
+    "file": "list.BkEct0gJ.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

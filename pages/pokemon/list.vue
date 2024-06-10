@@ -1,6 +1,9 @@
 <template>
+  <div class="d-flex justify-content-center">
+    <HeaderComponent />
+  </div>
+  <h1 class="d-flex justify-content-center m-5">โปเกมอน บีบมะนาวฆ่างู</h1>
   <div v-if="pokemons.length">
-    <h1 class="d-flex justify-content-center m-5">โปเกมอน บีบมะนาวฆ่างู</h1>
     <div class="d-flex justify-content-center">
       Computed {{ searchQuery }}
       <br>
@@ -31,6 +34,7 @@
 <script lang="ts" setup>
 import { ref, onMounted, watchEffect , computed } from 'vue';
 import axios from 'axios';
+import HeaderComponent from '@/layouts/header';
 
 interface Pokemon {
   name: string;

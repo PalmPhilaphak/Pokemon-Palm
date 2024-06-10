@@ -1,6 +1,6 @@
 <template>
+  <h1 class="text-center mt-5">Detail</h1>
   <div v-if="pokemon">
-    <h1 class="text-center mt-5">Detail</h1>
     <div class="card mx-auto mt-5" style="width: 18rem;">
       <img class="img" :src="pokemon.sprites.front_default" alt="">
 

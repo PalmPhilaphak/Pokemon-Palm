@@ -1,0 +1,9 @@
+version: '3'  # เวอร์ชันของ Docker Compose ที่ใช้
+
+services:  # กำหนดการตั้งค่าสำหรับ services (containers) ที่ต้องการสร้าง
+  nuxt:  # กำหนดชื่อของ service (container)
+    build: .  # สั่งให้ Docker สร้าง image โดยใช้ Dockerfile ที่อยู่ใน directory ปัจจุบัน (.)
+    ports:  # กำหนดการ forward port ระหว่าง container และ host machine
+      - "3000:3000" 
+    environment:  # กำหนด environment variables สำหรับ container
+      - NODE_ENV=production  # กำหนดค่า environment variable NODE_ENV เป็น "production"

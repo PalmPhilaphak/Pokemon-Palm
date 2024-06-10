@@ -1,6 +1,10 @@
-// nuxt.config.ts
+import { defineNuxtConfig } from 'nuxt/config'
 
-export default defineNuxtConfig({
+export default {
+  // target: 'static', // Enable Static Site Generation (SSG)
+  // target: 'server', // Enable Static Site Generation (SERVER)
+  ssr:false,
+  // ssr:false,
   devtools: { enabled: true },
   app: {
     head: {
@@ -32,5 +36,5 @@ export default defineNuxtConfig({
         }
       ]
     }
-  },
-});
+  }
+};
