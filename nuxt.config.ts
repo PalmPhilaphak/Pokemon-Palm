@@ -1,10 +1,8 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
-export default {
-  // target: 'static', // Enable Static Site Generation (SSG)
-  // target: 'server', // Enable Static Site Generation (SERVER)
-  ssr:false,
-  // ssr:false,
+export default defineNuxtConfig({
+  // target: 'static', // หรือ 'server'
+  ssr: false,
   devtools: { enabled: true },
   app: {
     head: {
@@ -36,5 +34,7 @@ export default {
         }
       ]
     }
-  }
-};
+  },
+  // เพิ่มค่า basePath ที่ต้องการ
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+})
